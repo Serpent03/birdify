@@ -1,0 +1,266 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/nevermind.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/agave.min.css");
+
+/* VARIABLE DECLARATION FOR MAKING LIFE EASY */
+
+:root {
+    --c_grey: #383838;
+
+    --f_hkGrotesk: "HK Grotesk";
+    --f_nevermind: "Nevermind";
+    --f_agave: "agave";
+
+    --f_mainFont: var(--f_hkGrotesk); 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--f_mainFont);
+    transition: 0.5s;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+}
+
+body {
+    background: #000;
+    color: white;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 5rem 2rem;
+}
+
+/* Navigation Styles */
+
+header {
+    background: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 95%;
+    max-width: 1500px;
+}
+
+.logo {
+    font-size: 1.25rem;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    padding-top: 2rem;
+    display: none;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+    border: 10%;
+    border-radius: 5px;
+}
+nav li:active, nav li:hover {
+    background: rgb(36, 36, 36);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #ffa98e;
+}
+
+.nav-toggle:checked ~ nav {
+    display: block;
+}
+
+@media (min-width: 900px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background: black;
+    }
+
+    nav {
+        all: unset;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav li {
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+.learn-more-btn {
+    background: rgb(185, 185, 185);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.learn-more-btn:hover {
+    background: #383838;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Section One */
+
+.section-one {
+    margin: 11rem 2rem 0;
+}
+
+.header {
+    font-size: 4.5rem;
+}
+
+.section-one-paragraph {
+    margin: 2rem 0;
+    width: 70%;
+    max-width: 500px;
+    line-height: 1.5rem;
+}
+
+.section-one .header {
+    padding-bottom: 20px;
+}
+
+.get-started-btn {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.get-started-btn:hover {
+    background: #6c83ff;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Section Two */
+
+/* Section Three */
+
+.section-three h3 {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Section Four */
+
+.flex-group {
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-four p {
+    margin-bottom: 2rem;
+}
+
+.section-four-btn {
+    margin-bottom: rem;
+}
+
+/* Section Five */
+
+.section-five-flex-group {
+    flex-direction: row-reverse;
+}
+
+.section-five p {
+    margin-bottom: 2rem;
+}
