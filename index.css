@@ -1,6 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/nevermind.min.css");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/agave.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/agave.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Poppins:wght@300&display=swap');
 
 /* VARIABLE DECLARATION FOR MAKING LIFE EASY */
 
@@ -10,6 +12,8 @@
     --f_hkGrotesk: "HK Grotesk";
     --f_nevermind: "Nevermind";
     --f_agave: "agave";
+    --f_eczar: "Eczar";
+    --f_poppins: "Poppins";
 
     --f_mainFont: var(--f_hkGrotesk); 
 }
@@ -54,8 +58,9 @@ header {
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     margin: 1rem;
+    font-family: var(--f_eczar);
     text-transform: uppercase;
 }
 
@@ -192,21 +197,31 @@ nav a:hover {
 /* Section One */
 
 .section-one {
-    margin: 11rem 2rem 0;
+    /* margin: 11rem 2rem 0; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(101, 101, 101, 0.478);
+    /* right: 50%; */
 }
 
 .header {
     font-size: 4.5rem;
 }
 
-.section-one-paragraph {
-    margin: 2rem 0;
-    width: 70%;
-    max-width: 500px;
-    line-height: 1.5rem;
-}
-
 .section-one .header {
+    /* margin: 2rem 0; */
+    /* width: 100%; */
+    /* max-width: 500px; */
+    /* line-height: 1.5rem; */
+    font-size: 2.5rem;
     padding-bottom: 20px;
 }
 
@@ -214,7 +229,7 @@ nav a:hover {
     background: white;
     padding: 10px 20px;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: black;
 }
@@ -226,6 +241,10 @@ nav a:hover {
 }
 
 /* Section Two */
+
+.section-two {
+    position: relative;
+}
 
 /* Section Three */
 
