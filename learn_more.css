@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/nevermind.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/agave.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/agave.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Poppins:wght@300&display=swap');
+
+/* VARIABLE DECLARATION FOR MAKING LIFE EASY */
+
+:root {
+    --c_grey: #383838;
+
+    --f_hkGrotesk: "HK Grotesk";
+    --f_nevermind: "Nevermind";
+    --f_agave: "agave";
+    --f_eczar: "Eczar";
+    --f_poppins: "Poppins";
+
+    --f_mainFont: var(--f_hkGrotesk); 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--f_mainFont);
+    transition: 0.5s;
+}
