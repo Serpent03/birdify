@@ -26,6 +26,7 @@
         font-size: 2.5rem;
         font-weight: 600;
         text-align: center;
+}
        
  body {
         background: #000;
@@ -36,7 +37,7 @@
     }
     
     
-    header {
+  header {
         background: black;
         text-align: center;
         position: fixed;
