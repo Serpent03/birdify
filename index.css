@@ -198,18 +198,45 @@ nav a:hover {
 
 .section-one {
     /* margin: 11rem 2rem 0; */
-    position: absolute;
-    top: 50%;
+    position: relative;
+    /* top: 50%; */
     left: 50%;
-    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    transform: translate(-50%, 20%);
     align-items: center;
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 1);
     border-radius: 3px;
     padding: 10px;
     padding-bottom: 20px;
+    margin-bottom: 1rem;
     background-color: rgba(101, 101, 101, 0.478);
     /* right: 50%; */
+}
+
+
+.section-one .descriptor {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+.section-one .descriptor img {
+    border-radius: 10px;
+    margin-right: 10%;
+    /* margin-top: 1rem; */
+    margin-bottom: 1.5rem;
+    width: 55%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-one .descriptor .textPart {
+    font-size: 150%;
+}
+
+.section-one .descriptor .textPart i {
+    font-size: 80%;
 }
 
 .innerText {
@@ -248,7 +275,10 @@ hr {
     background: #6c83ff;
     color: white;
     transition: 0.5s;
+    cursor: pointer;
 }
+
+
 
 /* Section Two */
 
@@ -260,6 +290,7 @@ hr {
 
 .section-three h3 {
     margin: 0 auto;
+    margin-top: 10rem;
     width: 80%;
     max-width: 700px;
     font-size: 2.5rem;
