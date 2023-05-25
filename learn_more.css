@@ -5,7 +5,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Poppins:wght@300&display=swap');
 
 /* VARIABLE DECLARATION FOR MAKING LIFE EASY */
+body {
+    background: #000;
+    color: white;
+    width: 94%;
+    max-width: 1460px;
+    margin: 0 auto;
+text-align: center;
+}
 
+header {
+    background: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 95%;
+    max-width: 1500px;
+}
+
+.logo {
+    font-size: 2.85rem;
+    margin: 1rem;
+    font-family: var(--f_eczar);
+    text-transform: uppercase;
+}
 :root {
     --c_grey: #383838;
 
@@ -28,28 +52,3 @@
         text-align: center;
 }
        
-.body {
-        background: #000;
-        color: white;
-        width: 94%;
-        max-width: 1460px;
-        margin: 0 auto;
-    text-align: center;
-    }
-    
-.header {
-        background: black;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-        width: 95%;
-        max-width: 1500px;
-    }
-    
-    .logo {
-        font-size: 2.85rem;
-        margin: 1rem;
-        font-family: var(--f_eczar);
-        text-transform: uppercase;
-    }
