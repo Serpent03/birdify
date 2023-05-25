@@ -2,13 +2,17 @@ function onClick(f_id) {
 
     switch (f_id) {
         case 'getStarted':
-            object = document.getElementsByClassName('section-one')[0]
-            console.log(object.offsetWidth)
-            object.style.height = "70%"
-            object.style.transform = "translate(0%, -50%)"
-            console.log(object.offsetWidth)
+            im = document.getElementById('inpImg')
+            desc = document.getElementById('desc')
+
+            normName = "Placeholder Stuff"
+            scName = "placeholderitus stuffitus"
+            imToReplace = "cov2.jpg" // call the file func here
+
+            im.src = imToReplace
+            desc.innerHTML = `${normName}<br><i>${scName}</i>`
+
             break;
-    
         default:
             break;
     }
