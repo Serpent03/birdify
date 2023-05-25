@@ -25,10 +25,12 @@ header {
 }
 p {
     text-align:left;
+    font-size: larger;
 }
 
 h3 {
     text-align:left;
+    font-size: x-large;
 }
 .logo {
     font-size: 2.85rem;
@@ -162,13 +164,35 @@ nav a:hover {
         padding: 0;
     }
 }
- .Heading {
-        margin:0 auto ;
-        margin-top: 9rem;
-        width: 79%;
-        max-width: 690px;
-        font-size: 2.5rem;
-        font-weight: 600;
-        text-align: center;
-}
+
        
+h4 {
+    font-size: xx-large;
+}
+
+p1 {
+    font-size: larger;
+}
+.Heading{
+   font-family: var(--f_nevermind);
+  
+   
+   margin-top: 10rem;
+  
+  
+   font-size: 2.5rem;
+   font-weight: 580;
+   
+}
+
+h2{
+    font-family: var(--f_nevermind);
+  
+   
+   
+   
+   
+    font-size: 2rem;
+    font-weight: 580;
+    
+}
